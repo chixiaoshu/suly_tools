@@ -1,16 +1,22 @@
-# suly_tools
+# 📱 Suly Tools - 你的 Flutter 小工具箱 ✨
 
-A new Flutter project.
+一个开发者自用设计的工具箱，目前仅包含进制转换器、设置页面模板、分类 UI 示例等。适合用作学习 / 模板 / 个人工具集！
 
-## Getting Started
+## ✨ 功能特色
 
-This project is a starting point for a Flutter application.
+- 🔢 增加不同的小工具
+- 🧰 Flutter Settings 页面快速构建
+- 📁 页面管理结构示例（支持 BottomNavigation）
+- 🌈 支持自定义主题（未实现）
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 截图
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+暂无
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 使用方式
+
+```bash
+git clone https://github.com/chixiaoshu/suly_tools
+cd suly_tools
+flutter run
+```
