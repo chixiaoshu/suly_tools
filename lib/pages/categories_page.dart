@@ -15,16 +15,8 @@ class CategoriesPage extends StatelessWidget {
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
         ),
-        ListTile(
-          title: const Text('test1'),
-          onTap: () {
-            },
-        ),
-        ListTile(
-          title: const Text('test2'),
-          onTap: () {
-            },
-        ),
+        ListTile(title: const Text('test1'), onTap: () {}),
+        ListTile(title: const Text('test2'), onTap: () {}),
         Padding(
           padding: EdgeInsets.all(16.0),
           child: Text(

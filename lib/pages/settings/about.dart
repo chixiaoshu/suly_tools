@@ -24,9 +24,7 @@ class _AboutPageState extends State<AboutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('关于'),
-      ),
+      appBar: AppBar(title: const Text('关于')),
       body: ListView(
         children: [
           GestureDetector(
@@ -44,7 +42,11 @@ class _AboutPageState extends State<AboutPage> {
           ),
           ListTile(
             title: Text('关于梨箱'),
-            titleTextStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 0, 0, 0)),
+            titleTextStyle: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Color.fromARGB(255, 0, 0, 0),
+            ),
           ),
           ListTile(
             title: Text('Github'),
