@@ -44,30 +44,7 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# macOS 系统文件
-.DS_Store
+add_translation.py
 
-# Windows 系统文件
-Thumbs.db
-
-# Xcode 相关
-xcuserdata/
-DerivedData/
-*.xcworkspace
-
-# Flutter web 构建产物
-/web/.dart_tool/
-/web/build/
-
-# Linux 构建产物
-linux/flutter/ephemeral/
-
-# macOS 构建产物
-macos/Flutter/ephemeral/
-macos/Pods/
-
-# Windows 构建产物
-windows/Flutter/ephemeral/
-
-# pubspec.lock（如为 package 而非 app，可忽略此文件）
-# pubspec.lock
+*/*/generated_*
+*/*/Generated*
