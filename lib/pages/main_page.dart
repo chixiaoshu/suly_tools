@@ -13,7 +13,6 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   int _currentIndex = 0;
-  String _currentTitle = '首页';
 
   final PageController _pageController = PageController();
 
@@ -26,12 +25,6 @@ class _MainPageState extends State<MainPage> {
   final List<String> _titles = ['首页', '分类', '我的'];
 
   @override
-  void initState() {
-    super.initState();
-    _currentTitle = _titles[_currentIndex];
-  }
-
-  @override
   void dispose() {
     _pageController.dispose();
     super.dispose();
@@ -41,7 +34,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_currentTitle),
+        title: Text(_titles[_currentIndex]),
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
@@ -60,7 +53,6 @@ class _MainPageState extends State<MainPage> {
         onPageChanged: (index) {
           setState(() {
             _currentIndex = index;
-            _currentTitle = _titles[index];
           });
         },
       ),
