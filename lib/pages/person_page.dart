@@ -5,6 +5,20 @@ class PersonPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {    
-    return const Center(child: Text('我的'));
+    return ListView(
+      children: [
+        Padding(
+          padding: EdgeInsets.all(16.0),
+          child: Text('账号信息',
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          ),
+        ),
+        ListTile(
+          title: Text('用户名'),
+          leading: Icon(Icons.perm_identity),
+          trailing: Text('default'),
+        ),
+      ],
+    );
   }
 }
