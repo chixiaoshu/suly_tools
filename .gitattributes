@@ -1,0 +1,2 @@
+# Set Dart as the primary language for this repository
+*.dart linguist-language=Dart
