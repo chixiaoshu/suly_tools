@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
- import 'package:suly_tools/pages/settings/settings_page.dart';
- import 'package:suly_tools/pages/home_page.dart';
- import 'package:suly_tools/pages/categories_page.dart';
- import 'package:suly_tools/pages/person_page.dart';
+import 'package:suly_tools/pages/settings/settings_page.dart';
+import 'package:suly_tools/pages/home_page.dart';
+import 'package:suly_tools/pages/categories_page.dart';
+import 'package:suly_tools/pages/person_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -41,7 +41,19 @@ class _MainPageState extends State<MainPage> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const SettingsPage()),
+                PageRouteBuilder(
+                  transitionDuration: const Duration(milliseconds: 200),
+                  pageBuilder: (context, animation, secondaryAnimation) {
+                    return SlideTransition(
+                      position: Tween<Offset>(
+                        begin: const Offset(1.0, 0.0),
+                        end: Offset.zero,
+                      ).animate(animation),
+                      child: const SettingsPage(),
+                    );
+                  },
+                ),
+                // MaterialPageRoute(builder: (context) => const SettingsPage()),
               );
             },
           ),
